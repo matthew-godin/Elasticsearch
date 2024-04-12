@@ -1,6 +1,6 @@
 # Elasticsearch
 
-## Installation
+## Elasticsearch Installation
 
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
@@ -14,3 +14,27 @@ sudo apt-get update && sudo apt-get install elasticsearch
 ```bash
 sudo systemctl start elasticsearch.service
 ```
+
+## Verify Elasticsearch Is Installed Successfully
+
+```bash
+curl -X GET "localhost:9200/?pretty"
+```
+
+# Kibana Installation
+
+```bash
+sudo apt-get update && sudo apt-get install kibana
+```
+
+Uncomment __server.port: 5601__ in **/etc/kibana/kibana.yml**.
+
+## Start Kibana
+
+```bash
+sudo systemctl start kibana.service
+```
+
+## Verify Kibana Is Installed Successfully
+
+Navigate to **localhost:5601/app/home** in your web browser.
