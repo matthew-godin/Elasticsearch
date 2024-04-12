@@ -21,7 +21,7 @@ sudo systemctl start elasticsearch.service
 curl -X GET "localhost:9200/?pretty"
 ```
 
-# Kibana Installation
+## Kibana Installation
 
 ```bash
 sudo apt-get update && sudo apt-get install kibana
