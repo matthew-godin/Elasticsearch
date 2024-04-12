@@ -37,4 +37,4 @@ sudo systemctl start kibana.service
 
 ## Verify Kibana Is Installed Successfully
 
-Navigate to **localhost:5601/app/home** in your web browser.
+Navigate to **localhost:5601** in your web browser.
